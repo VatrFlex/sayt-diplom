@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'ABeeZee',sans-serif ;
+}
+li{
+    list-style: none;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* главная страница */
+.header {
+    width: 100%;
+    height: 106px;
+    background: #A0B3F8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.header_logo {
+    display: flex;
+    margin-left: 34px;
+    font-size: 36px;
+    margin-top: 30px;
+    color:white;
+    font-weight: 700;
+    font-family: 'ABeeZee',sans-serif ;
+}
+
+.helder_list {
+    display: flex;
+    font-weight: 700;
+    font-size: 22px;
+    gap: 25px;
+    margin-top: 35px;
+    margin-left: 100px;
+    transition: 1s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.helder_list :hover{
+    color: #ffffff; /* Меняем цвет текста */
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+}
+
+.container{
+    max-width: 1294px;
+    max-height: 871px;
+}
+.fon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1920px;
+    height: 871px;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    background-position: center center ;
+    background: url(../Img/Fon.png);
+}
+
+.plag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.shapka{
+    width: 1920px;
+    height: 106px;
+    display: flex;
+    flex-wrap: wrap;
+     
+}
+.baner{
+    position: absolute;
+    margin-top: 227px;
+    margin-left: 312px;
+    font-size: 64px;
+    width: 570px;
+    height: 90px;
+    color:white;
+    font-weight: 700;
+    font-family: 'ABeeZee',sans-serif ;
+    text-shadow: 2px 2px black;
+}
+.content{
+    margin-left: 314px;
+    margin-top: 320px;
+    color: white;
+}
+.nov{
+    height: 42px;
+    text-shadow: 2px 2px black;
+    font-size: 36px;
+}
+.novosti{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1600px;
+    height: 400px;
+    margin-top:20px ;
+}
+.n1{
+    margin-right:20px ;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    width: 440px;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.k1{
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 128px;
+    width: 128px;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    background-position: center center ;
+    background: url(../Img/appartment-card__image.png);
+}
+.k1{
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 128px;
+    width: 128px;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    background-position: center center ;
+
+}
+
+.txt1{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 19px;
+    margin-top:62px ;
+    margin-left: 15px;
+}
+.txt2{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 19px;
+    margin-top:26px ;
+    margin-left: 15px;
+}
+.txt3{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 19px;
+    margin-top:52px ;
+    margin-left: 15px;
+}
+.txt4{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 19px;
+    margin-top:62px ;
+    margin-left: 15px;
+}
+.txt5{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 19px;
+    margin-top:52px ;
+    margin-left: 15px;
+}
+.txt6{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 19px;
+    margin-top:62px ;
+    margin-left: 15px;
+}
+/*Подвал*/
+.podval{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 63px;
+    background-color: A0B3F8; 
+}
+.podval2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 63px;
+    background-color: A0B3F8; 
+}
+
+h1 {
+    display: flex;
+    text-decoration: underline;
+    font-size: 32px;
+    color:rgb(0, 0, 0); 
+    }
+.infpd{
+    width: 200px;
+    height: 58px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    color:white;
+}
+.vk{
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    background-position: center center ;
+    margin-top: 5px;
+    margin-left: 520px;
+    width: 45px;
+    height: 48px;
+ 
+}
+.infpd2{
+    display: flex;
+    margin-left: 600px;
+    margin-top: 5px;
+    font-size: 15px;
+    color:white;
+}
+a:hover img {   
+    transform: scale(1.05); 
+}
+.nova {
+    display: flex;
+    justify-content: center ;
+    height: 742px;
+}
+.GOD2{
+    position: absolute;
+    width: 930px;
+    margin-top: 210px;;
+}
+  .osnova{
+    display: flex;
+    text-align: center; 
+   margin-left:0px;
+    font-size: 32px;
+    margin-top: 50px;
+    color:rgb(0, 0, 0);
+  }
+  .sert {
+    display: block;
+    margin-top: 0px;
+    margin-left: 90px;
+    font-size: 30px;
+    font-size: 22px;
+    margin-bottom: 11em;
+}  
+    .sert a:hover {
+        color: #A0B3F8; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration: underline; /* Добавляем подчеркивание */
+    }
+ 
+/*////////////////Стили для <a>////////////////////////*/     
+.sert a{
+    color: black;
+}
+.txt22 a{
+    color: black;
+}
+.txtin a{
+   color: black; 
+}
+.lolo a{
+    color: #000000;
+}
+/*///////////////////////////////////////////////////////*/
+.prnova{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+ .nova2{  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    width: 1000px;
+}
+.GOD{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin-top: 80px;;
+ }
+.ohrana {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    margin-top: 58px;
+    margin-left: 0px;
+    color:rgb(0, 0, 0);
+}
+.oh2022{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    font-size: 30px;
+    color:rgb(0, 0, 0);  
+}
+.ohrgod{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    font-size: 30px;
+    color:rgb(0, 0, 0);  
+}
+.ofgod{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 30px;
+    color:rgb(0, 0, 0);   
+}
+
+.txt22{
+    display: block;
+    font-size: 20px;
+}
+.txt22 a:hover {
+    color: #A0B3F8; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+.txtin{
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.txtin a{
+color: black;
+}
+.txtin a:hover {
+    color: #A0B3F8; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+/*oficalnaya*/
+.prnova3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+.nova3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    width: 1000px;
+    
+}
+.obsu {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    margin-top: 50px;
+    color:rgb(0, 0, 0);
+}
+.GOD3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin-top: 50px;;
+    
+}
+.block {
+    width: 930px;
+    height: 216px;
+    background: #ffffff;
+    border: 4px double black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.block2 {
+    width: 930px;
+    height: 216px;
+    background: #ffffff;
+    border: 4px double black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.block3 {
+    width: 930px;
+    height: 216px;
+    background: #ffffff;
+    border: 4px double black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.txtx{
+    font-size: 20px;
+    margin-top: 20px;  
+    margin-left: 17px;  
+}
+.txtx2{
+    font-size: 20px;
+    margin-top: 20px;   
+    margin-left: 17px; 
+}
+.txtx3{
+    font-size: 20px;
+    margin-top: 20px;    
+    margin-left: 17px;
+}
+/*Эфекты для блоков */
+/*Block 1*/
+.block {
+    transition: 1s; /* Время эффекта */
+   }
+   .block:hover {
+    transform: scale(1.03); /* Увеличиваем масштаб */
+   }
+   /*Block 2*/
+   .block2 {
+    transition: 1s; /* Время эффекта */
+   }
+   .block2:hover {
+    transform: scale(1.03); /* Увеличиваем масштаб */
+   }
+   /*Block 3*/
+   .block3 {
+    transition: 1s; /* Время эффекта */
+   }
+   .block3:hover {
+    transform: scale(1.03); /* Увеличиваем масштаб */
+   }
+/*oficalnaya-1*/
+.prnova4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+.nova4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    width: 1000px;
+    
+}
+.proved {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    margin-top: 50px;
+    color:rgb(0, 0, 0);
+}
+.GOD4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin-top: 30px;;
+    
+}
+.txtproved {
+    justify-content: center;
+    font-size: 20px;
+    color: #000000;
+    line-height: 30px;
+}
+.skaner{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    text-decoration:underline;
+  }
+  /*Kontakt*/
+  .txtkon{
+    font-size: 20px;
+    color: #000000;
+    line-height: 27px;
+}
+.Kon{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    margin-top: 50px;
+    color:rgb(0, 0, 0);
+}
+.mest{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 345px;
+    font-size: 32px;
+    margin-top: 50px;
+    color:rgb(0, 0, 0);
+}
+/*kompaniya*/
+
+.nova5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    width: 100%;
+    
+}
+.GOD5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    width: 930px;
+    margin-top: 30px;;
+    
+}
+.txtkom {
+    justify-content: center;
+    font-size: 20px;
+    color: #000000;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.kom {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    color:rgb(0, 0, 0);
+}
+.cof {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    margin-top: 20px;
+    color:rgb(0, 0, 0);
+}
+.prnova5{
+    animation:changing 30s infinite;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    background-position: center center ;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: url(/Img/cof1.png);
+}
+.ofras {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    margin-top: 100px;
+    margin-left: 0px;
+    color:rgb(0, 0, 0);
+}
+@keyframes changing {
+    0%
+    {
+        background-image: url(/Img/cof1.png);
+    }
+    35%
+    {
+        background-image: url(/Img/cof2.png);
+    }
+    65%
+    {
+        background-image: url(/Img/cof3.png);
+    }
+}
+/* ////////////////////////////////////Все лайны ///////////////////////////////*/
+.create-line {
+    position: absolute;
+    width: 1100px;
+    margin-left: px;
+    margin-top: 210px;
+    border-top: 3px solid #000000;
+  }
+.create-line1 {
+    width: 250px;
+   margin-top: 100px;
+   margin-left: -243px;
+    border-top: 3px solid #000000;
+  }
+/* годы */
+.create-line2 {
+    width: 900px;
+    margin-top: 5px;
+    border-top: 3px solid #000000;
+  }
+  .create-line3 {
+    width: 900px;
+    margin-top: 5px;
+    border-top: 3px solid #000000;
+  }
+  .create-line4 {
+    width: 920px;
+    margin-top: 5px;
+    border-top: 3px solid #000000;
+  }
+  .create-line5{
+    width: 980px;
+    margin-top: 5px;
+    border-top: 3px solid #000000;
+  }
+  .create-line6 {
+    width: 1050px;
+    margin-top: 5px;
+    border-top: 3px solid #000000;
+  }
+  /*oficalnaya*/
+  .create-line7 {                         
+    width: 930px;
+    margin-top: 20px;
+    border-top: 3px solid #000000;
+  }
+  /*kompany*/
+  .create-line8 {                         
+    width: 930px;
+    margin-top: 20px;
+    border-top: 3px solid #000000;
+  }
+  /*Официальные раскрытия*/
+  .create-line9 {
+    width: 390px;
+    margin-left: -385px;
+    margin-top: 160px;
+    border-top: 3px solid #000000;
+  }
+/*адаптация*/
+div.page-container {
+    min-width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    }
+/* Меню*/
+   .helder_list ul {
+     
+        list-style: none; /* Для списка убираем маркеры */
+        margin: 0; /* Нет отступов вокруг */
+        padding: 0; /* Убираем поля вокруг текста */
+        font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+        font-size: 20px; /* Размер названий в пункте меню */
+       }
+      .helder_list li ul  {
+        position: absolute; /* Подменю позиционируются абсолютно */
+        display: none; /* Скрываем подменю */
+        margin-left: px; /* Сдвигаем подменю вправо */
+        margin-top: 10px; /* Сдвигаем подменю вверх */
+       }
+      .helder_list li a {
+        display: block; /* Ссылка как блочный элемент */
+        padding: 5px; /* Поля вокруг надписи */
+        text-decoration: none; /* Подчеркивание у ссылок убираем */
+        color: #fcfcfc; /* Цвет текста */
+        border: px solid #A0B3F8;/* Рамка вокруг пунктов меню */
+        background-color: #A0B3F8; /* Цвет фона */
+        border-bottom: none; /* Границу снизу не проводим */
+        transition: 0.7s;
+       }
+       .helder_list li a:hover {
+        color: #ffe; /* Цвет текста активного пункта */
+        background-color: #5488af; /* Цвет фона активного пункта */
+       }
+       .helder_list li:hover ul { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+   }
+   .brd {
+    border-bottom: 1px solid #ccc; /* Линия снизу */
+   }
