@@ -550,15 +550,15 @@ color: black;
 @keyframes changing {
     0%
     {
-        background-image: url(/Img/cof1.png);
+        background-image: url(Img/cof1.png);
     }
     35%
     {
-        background-image: url(/Img/cof2.png);
+        background-image: url(Img/cof2.png);
     }
     65%
     {
-        background-image: url(/Img/cof3.png);
+        background-image: url(Img/cof3.png);
     }
 }
 /* ////////////////////////////////////Все лайны ///////////////////////////////*/
