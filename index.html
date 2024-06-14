@@ -1,6 +1,8 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style 3.css">
+   <!-- Загрузите библиотеку значков, чтобы отобразить меню гамбургера (бары) на маленьких экранах -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Цоф Берёзовская</title>
 </head>
 <body>
@@ -8,9 +10,31 @@
      <!--Шапка--->
     <helder class="header">
         <div class="shapka">
+<!-- -------------------------------------------------------------------------------------------------------------------------------------  -->   
+            <div class="topnav">
+                <a href="#home" class="active">⠀</a>
+                <!-- Навигационные ссылки (по умолчанию скрыты) -->
+                <div id="myLinks">
+                  <a href="./index.html">Главная</a>
+                  <a href="./Proizvodstvenaya.html">Заявление о политик</a>
+                  <a href="./oxrana.html">Охрана труда</a>
+                  <a href="./OFICALNOE RASKRITIE.html">Офицальное раскрытия</a>
+                  <a href="./oficalnaya.html">Общественные обсуждения</a>
+                  <a href="./Kontakt.html">Контакты</a>
+                  <a href="./Kompaniya.html">О компании</a>
+                </div>
+                <!-- "Меню гамбургеров" / "Значок панели" переключение навигационных ссылок -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------  -->   
             <div class="header_logo">
                 Цоф Берёзовская
             </div>
+            <!-- Верхнее меню навигации -->
+
+     <!-- "кОнец кода -->
             <ul class="helder_list">
                 <li><a class="helder_link" href="./index.html">Главная</a></li>
             <!-----------------------------Производственная политика----------------------------->
@@ -22,13 +46,14 @@
                 <!-----------------------------Официальная информация--------------------------->
                     <li><a class="helder_link" href="#!">Официальная информация</a><ul>
                      <!--Меню-->
-                     <li><a href="./OFICALNOE RASKRITIE.html">Офицальные раскрытия</a></li> 
+                     <li><a href="./OFICALNOE RASKRITIE.html">Офицальное раскрытия</a></li> 
                      <li><a href="./oficalnaya.html" class="brd">Общественные обсуждения⠀⠀</a></li> 
                      </ul></li>
             <li><a class="helder_link" href="./Kontakt.html">Контакты</a></li>
             <li><a class="helder_link" href="./Kompaniya.html">О компании</a></li>
-            </div>
-        
+            </ul>
+        </div>
+    
     </helder>  
      <!--Фон для главной страницы--->
     <div class="plag">
@@ -40,34 +65,34 @@
                 <div class="nov">Новости :</div>
                 <div class="novosti">
                     <div class="n1">
-                        <div class="k1"><img src="Img/appartment-card__image.png"></div>
+                        <div class="k1"><img src="./Img/appartment-card__image.png"></div>
                         <div class="txt1">Поздравляем работников<br> 
                             фабрики с днем победы!</div>
                     </div>
                     <div class="n1">
-                        <div class="k1"><img src="Img/appartment-card__image(4).png"></div>
+                        <div class="k1"><img src="./Img/appartment-card__image(4).png"></div>
                         <div class="txt2">
                            <br> Вышла обновлённая версия<br> мобильного<br>
                             приложения для сотрудников! </div>
                     </div>
                     <div class="n1">
-                        <div class="k1"><img src="Img/appartment-card__image(5).png"></div>
+                        <div class="k1"><img src="./Img/appartment-card__image(5).png"></div>
                         <div class="txt3">Участвуй в конкурсе ко <br>
                             дню металлурга и выигрывай<br>
                             призы.</div>
                     </div>
                     <div class="n1">
-                        <div class="k1"><img src="Img/appartment-card__image(3).png"></div>
+                        <div class="k1"><img src="./Img/appartment-card__image(3).png"></div>
                         <div class="txt4">Поздравляем работников <br>
                             фабрики с днем шахтёра!</div>
                     </div>
                     <div class="n1">
-                        <div class="k1"><img src="Img/appartment-card__image(2).png"></div>
+                        <div class="k1"><img src="./Img/appartment-card__image(2).png"></div>
                         <div class="txt5">Объявляеться набор <br>
                             среди сотрудников в КУЗГТУ <br>#цофберезовская.</div>
                     </div>
                     <div class="n1">
-                        <div class="k1"><img src="Img/appartment-card__image(1).png "></div>
+                        <div class="k1"><img src="./Img/appartment-card__image(1).png "></div>
                         <div class="txt6">Сотрудники ЦОФ Березовская <br>
                             приняли участие в забеге
                             <br>«МарафонGO»</div>
@@ -83,7 +108,7 @@
             Россия, 652421<br>
             Кем.обл г.Берёзовский<br>
         </div>
-        <div class="vk"><a href="https://vk.com/cof_berezovskaya"><img src="Img/vk.png "></a></div>
+        <div class="vk"><a href="https://vk.com/cof_berezovskaya"><img src="/Img/vk.png "></a></div>
         <div class="infpd2">
             Телефоны<br>
             +7 (384-45) 3-99-80<br>
@@ -92,4 +117,6 @@
     </div>   
 </div>
 </body>
-
+<body> 
+    <script src="/js/windw.js"></script>
+</body>
