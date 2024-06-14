@@ -4,6 +4,9 @@
     margin: 0;
     font-family: 'ABeeZee',sans-serif ;
 }
+html, body{
+    overflow-x:hidden
+    }
 li{
     list-style: none;
 }
@@ -49,14 +52,15 @@ a {
 
 
 .fon {
-    .fon {
-    background:url(../Img/Fon.png) no-repeat center center fixed; 
+    background:url(/Img/Fon.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 1450px;
+    height: 1400px;
 }
+.fonmob{
+    display: none;
 }
 
 .plag{
@@ -724,14 +728,6 @@ color: black;
         margin-top:10% ;
         margin-left: 3%;
     }
-    
-    
-    
-    
-    
-    
-    
-    
     .header_logo{
         margin-top: 27px;
     }
@@ -775,10 +771,149 @@ left:0;
     background-color: #ddd;
     color: black;
   }
-  
-  /* Стиль активной ссылки (или главная/логотип) */
-  .active {
+}
+@media (min-width: 420px) {
+    
+    
+    .content{
+        margin-left: 16.4%;
+        color: white;
+    }
+    .nov{
+        height: 42px;
+        text-shadow: 2px 2px black;
+        font-size: 36px;
+    }
+    .novosti{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 600px;
+        margin-top:20px ;
+    }
+    .n1{
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        margin-right:20px ;
+        width:27%;
+        height: 270px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .k1{
+        margin-left: 20px;
+        margin-top: 4%;
+        height: 128px;
+        background-repeat: no-repeat ;
+        background-size: 100% 100%;
+        background-position: center center ;
+    
+    }
+    
+    .txt1{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 16px;
+        margin-top:13% ;
+        margin-left: 0.78125%;
+    }
+    .txt2{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 16px;
+        margin-top:7% ;
+        margin-left: 0.78125%;
+    }
+    .txt3{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 16px;
+        margin-top:10% ;
+        margin-left: 3%;
+    }
+    .txt4{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 16px;
+        margin-top:13% ;
+        margin-left: 3%;
+    }
+    .txt5{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 16px;
+        margin-top:10% ;
+        margin-left: 3%;
+    }
+    .txt6{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 16px;
+        margin-top:10% ;
+        margin-left: 3%;
+    }
+
+    .fon {
+        background:url(/Img/Fon.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 1590px;
+    }
+    .header_logo{
+        margin-top: 40px;
+    }
+    .helder_list{
+   display: none;}
+   /* Стиль меню навигации */
+.topnav {
+    overflow: hidden;
     background-color: #a0b3f8;
+    position: relative;
+    display: flex;
   }
   
+  /* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
+  .topnav #myLinks {
+    display: none;
+  }
+ .a_icon{
+    width: 100%;
+ }
+  /* Ссылки меню навигации по стилю */
+  .topnav a {
+    color: white;
+    padding: 44px 56px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+  
+  /* Стиль меню гамбургера */
+  .topnav a.icon {
+    background: #a0b3f8;
+    display: block;
+    position: absolute;
+left:0;
+    top: 0;
+  }
+  
+  /* Добавить серый цвет фона при наведении курсора мыши */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+.a.active{
+left:3px;
+}
+.header {
+    width: 100%;
+    height: 130px;
+    background: #A0B3F8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
