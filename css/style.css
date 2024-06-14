@@ -773,7 +773,7 @@ left:0;
   }
 
 }
-@media (max-width: 420px) {
+@media (min-width: 420px) {
     
     
     .content{
@@ -861,7 +861,7 @@ left:0;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 1590px;
+        height: 1950px;
     }
     .header_logo{
         margin-top: 40px;
@@ -888,7 +888,7 @@ left:0;
     color: white;
     padding: 44px 56px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     display: block;
   }
   
