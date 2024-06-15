@@ -52,7 +52,7 @@ a {
 
 
 .fon {
-    background:url(/Img/Fon.png) no-repeat center center fixed; 
+    background:url("/Img/Fon.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -644,10 +644,83 @@ color: black;
    .brd {
     border-bottom: 1px solid #ccc; /* Линия снизу */
    }
-   .topnav{
+   /*                         FDFDFDF            FDFDFDF                */
+   .burger-checkbox{
     display: none;
    }
-@media (max-width: 1460px) {
+  .burger {
+    display: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+    margin-top: 34px;
+    margin-left: 25px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #ffffff;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 105px;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 150px;
+    margin: 0;
+    background:  #A0B3F8;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size:30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+  @media (max-width: 1460px) {
     
     
     .content{
@@ -733,180 +806,159 @@ color: black;
     }
     .helder_list{
    display: none;}
-   /* Стиль меню навигации */
-.topnav {
-    overflow: hidden;
-    background-color: #a0b3f8;
-    position: relative;
+   .burger{
     display: flex;
-  }
-  
-  /* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
-  .topnav #myLinks {
-    display: none;
-  }
- .a_icon{
-    width: 100%;
+    }
+    }
+    @media (max-width: 420px) {
+    
+    
+        .content{
+            margin-left: 16.4%;
+            color: white;
+        }
+        .nov{
+            height: 42px;
+            text-shadow: 2px 2px black;
+            font-size: 30px;
+        }
+        .novosti{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 600px;
+            margin-top:20px ;
+        }
+        .n1{
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 15px;
+            margin-right:20px ;
+            width:40%;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .k1{
+            margin-left: 0px;
+            margin-top: 4%;
+            height: 128px;
+            background-repeat: no-repeat ;
+            background-size: 100% 100%;
+            background-position: center center ;
+        
+        }
+        
+        .txt1{
+            text-shadow: 2px 2px black;
+            color: white;
+            font-size: 16px;
+            margin-top:1px ;
+            margin-left: 0.78125%;
+        }
+        .txt2{
+            text-shadow: 2px 2px black;
+            color: white;
+            font-size: 14px;
+            margin-top:1px ;
+            margin-left: 0.78125%;
+        }
+        .txt3{
+            text-shadow: 2px 2px black;
+            color: white;
+            font-size: 16px;
+            margin-top:1px ;
+            margin-left: 3%;
+        }
+        .txt4{
+            text-shadow: 2px 2px black;
+            color: white;
+            font-size: 16px;
+            margin-top:1px ;
+            margin-left: 3%;
+        }
+        .txt5{
+            text-shadow: 2px 2px black;
+            color: white;
+            font-size: 14px;
+            margin-top:1px ;
+            margin-left: 3%;
+        }
+        .txt6{
+            text-shadow: 2px 2px black;
+            color: white;
+            font-size: 14px;
+            margin-top:1px ;
+            margin-left: 3%;
+        }
+    
+        .fon {
+            background:url("/Img/Fon.png") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 1000px;
+        }
+        .header_logo{
+         margin-left: 110px;
+         margin-top: -63px;
+        }
+        .baner{
+            font-size: 40px;
+        }
+        .helder_list{
+       display: none;}
+       .menu-list {
+        top: 105px;
+        left: 0;
+        position: absolute;
+        display: grid;
+        gap: 12px;
+        padding: 42px 95px;
+        margin: 0;
+        background:  #A0B3F8;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: .3s;
+        width: 200px;
+      }
+      .menu-item {
+        display: block;
+        padding: 8px;
+        color: white;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .infpd{
+     width: 95%;
+     height: 58px;
+     display: flex;
+     margin-left: 10px;
+     margin-top: 9px;
+     font-size: 13px;
+     color:white;
  }
-  /* Ссылки меню навигации по стилю */
-  .topnav a {
-    color: white;
-    padding: 39px 96px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
+ .vk{
+     background-repeat: no-repeat ;
+     position: absolute;
+     background-size: 100% 100%;
+     background-position: center center ;
+     margin-top: 8px;
+     height: 48px;
   
-  /* Стиль меню гамбургера */
-  .topnav a.icon {
-    background: #a0b3f8;
-    display: block;
-    position: absolute;
-left:0;
-    top: 0;
-  }
-  
-  /* Добавить серый цвет фона при наведении курсора мыши */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-}
-@media (max-width: 420px) {
-    
-    
-    .content{
-        margin-left: 16.4%;
-        color: white;
-    }
-    .nov{
-        height: 42px;
-        text-shadow: 2px 2px black;
-        font-size: 36px;
-    }
-    .novosti{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 600px;
-        margin-top:20px ;
-    }
-    .n1{
-        display: flex;
-        flex-wrap: wrap;
-        border-radius: 15px;
-        margin-right:20px ;
-        width:27%;
-        height: 270px;
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-    
-    .k1{
-        margin-left: 20px;
-        margin-top: 4%;
-        height: 128px;
-        background-repeat: no-repeat ;
-        background-size: 100% 100%;
-        background-position: center center ;
-    
-    }
-    
-    .txt1{
-        text-shadow: 2px 2px black;
-        color: white;
-        font-size: 16px;
-        margin-top:13% ;
-        margin-left: 0.78125%;
-    }
-    .txt2{
-        text-shadow: 2px 2px black;
-        color: white;
-        font-size: 16px;
-        margin-top:7% ;
-        margin-left: 0.78125%;
-    }
-    .txt3{
-        text-shadow: 2px 2px black;
-        color: white;
-        font-size: 16px;
-        margin-top:10% ;
-        margin-left: 3%;
-    }
-    .txt4{
-        text-shadow: 2px 2px black;
-        color: white;
-        font-size: 16px;
-        margin-top:13% ;
-        margin-left: 3%;
-    }
-    .txt5{
-        text-shadow: 2px 2px black;
-        color: white;
-        font-size: 16px;
-        margin-top:10% ;
-        margin-left: 3%;
-    }
-    .txt6{
-        text-shadow: 2px 2px black;
-        color: white;
-        font-size: 16px;
-        margin-top:10% ;
-        margin-left: 3%;
-    }
-
-    .fon {
-        background:url(/Img/Fon.png) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 1950px;
-    }
-    .header_logo{
-        margin-top: 40px;
-    }
-    .helder_list{
-   display: none;}
-   /* Стиль меню навигации */
-.topnav {
-    overflow: hidden;
-    background-color: #a0b3f8;
-    position: relative;
-    display: flex;
-  }
-  
-  /* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
-  .topnav #myLinks {
-    display: none;
-  }
- .a_icon{
-    width: 100%;
  }
-  /* Ссылки меню навигации по стилю */
-  .topnav a {
-    color: white;
-    padding:23px 56px;
-    text-decoration: none;
-    font-size: 40px;
-    display: block;
-  }
-  
-  /* Стиль меню гамбургера */
-  .topnav a.icon {
-    background: #a0b3f8;
-    display: block;
-    position: absolute;
-left:0;
-    top: 0;
-  }
-  
-  /* Добавить серый цвет фона при наведении курсора мыши */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-}
-.a.active{
-left:3px;
-}
+ .infpd2{
+     position: absolute;
+     text-align:right;
+ 
+     width: 95%;
+     margin-top: 7px;
+     font-size: 13px;
+     color:white;
+ }  
+    }
+      
+      
+      
