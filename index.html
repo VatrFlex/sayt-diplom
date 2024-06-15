@@ -1,4 +1,7 @@
- <link rel="stylesheet" type="text/css" href="css/style.css">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style 4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <!-- Загрузите библиотеку значков, чтобы отобразить меню гамбургера (бары) на маленьких экранах -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Цоф Берёзовская</title>
@@ -9,29 +12,24 @@
     <helder class="header">
         <div class="shapka">
 <!-- -------------------------------------------------------------------------------------------------------------------------------------  -->   
-            <div class="topnav">
-                <a href="" class="active">⠀</a>
-                <!-- Навигационные ссылки (по умолчанию скрыты) -->
-                <div id="myLinks">
-                  <a href="./index.html">Главная</a>
-                  <a href="./Proizvodstvenaya.html">Заявление о политик</a>
-                  <a href="./oxrana.html">Охрана труда</a>
-                  <a href="./OFICALNOE RASKRITIE.html">Офицальное раскрытия</a>
-                  <a href="./oficalnaya.html">Общественные обсуждения</a>
-                  <a href="./Kontakt.html">Контакты</a>
-                  <a href="./Kompaniya.html">О компании</a>
-                </div>
-                <!-- "Меню гамбургеров" / "Значок панели" переключение навигационных ссылок -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
+<div class="menu">
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
+    <ul class="menu-list">
+        <li><a href="#" class="menu-item">Главная</a><li>
+        <li><a href="#" class="menu-item">Заявление о политике</a><li>
+        <li><a href="#" class="menu-item">Охрана труда</a><li>
+        <li><a href="#" class="menu-item">Офицальное раскрытия</a><li>
+            <li><a href="#" class="menu-item">Общественные обсуждения</a><li>
+                <li><a href="#" class="menu-item">Контакты</a><li>
+                    <li><a href="#" class="menu-item">О компании</a><li>
+    </ul>
+</div> 
 <!-- -------------------------------------------------------------------------------------------------------------------------------------  -->   
             <div class="header_logo">
                 Цоф Берёзовская
             </div>
             <!-- Верхнее меню навигации -->
-
      <!-- "кОнец кода -->
             <ul class="helder_list">
                 <li><a class="helder_link" href="./index.html">Главная</a></li>
