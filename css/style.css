@@ -52,12 +52,12 @@ a {
 
 
 .fon {
-    background:url("../Img/Fon.png") no-repeat center center fixed; 
+    background:url("/Img/Fon.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 1400px;
+    height: 910px;
 }
 .fonmob{
     display: none;
@@ -773,7 +773,7 @@ left:0;
   }
 
 }
-@media (min-width: 420px) {
+@media (max-width: 420px) {
     
     
     .content{
@@ -856,7 +856,7 @@ left:0;
     }
 
     .fon {
-        background:url("../Img/Fon.png") no-repeat center center fixed; 
+        background:url("/Img/Fon.png") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -886,7 +886,7 @@ left:0;
   /* Ссылки меню навигации по стилю */
   .topnav a {
     color: white;
-    padding: 44px 56px;
+    padding:23px 56px;
     text-decoration: none;
     font-size: 40px;
     display: block;
