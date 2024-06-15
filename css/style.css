@@ -59,10 +59,6 @@ a {
     background-size: cover;
     height: 910px;
 }
-.fonmob{
-    display: none;
-}
-
 .plag{
     display: flex;
     flex-wrap: wrap;
